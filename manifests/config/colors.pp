@@ -1,9 +1,9 @@
-class grahamconfig::config::colors (
+class adrianconfig::config::colors (
     ){
 
-    $my_homedir   = $grahamconfig::my_homedir
-    $my_sourcedir = $grahamconfig::my_sourcedir
-    $my_username  = $grahamconfig::my_username
+    $my_homedir   = $adrianconfig::my_homedir
+    $my_sourcedir = $adrianconfig::my_sourcedir
+    $my_username  = $adrianconfig::my_username
 
     file {"/Users/${my_username}/Library/Colors":
         owner   => $my_username,

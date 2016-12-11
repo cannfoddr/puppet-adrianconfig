@@ -1,20 +1,20 @@
-class grahamconfig (
-    $my_username  = 'grahamgilbert',
-    $my_homedir   = '/Users/grahamgilbert',
-    $my_sourcedir = '/Users/grahamgilbert/src',
+class adrianconfig (
+    $my_username  = 'adrian',
+    $my_homedir   = '/Users/adrian',
+    $my_sourcedir = '/Users/adrian/Projects',
     ){
-        class {'grahamconfig::homebrew': }
-        class {'grahamconfig::gems': } ->
-        class {'grahamconfig::directories': } ->
-        class {'grahamconfig::repositories': } ->
-        class {'grahamconfig::config': } ->
-        class {'grahamconfig::dock': } ->
-        class {'grahamconfig::wallpaper': } ->
-        class {'grahamconfig::fonts': } ->
-        class {'grahamconfig::ssh_keys': } ->
-        class {'grahamconfig::git': } ->
-        class {'grahamconfig::osquery': } ->
-        class {'grahamconfig::crashplan': }
-        class {'grahamconfig::munki': }
-
+        class {'adrianconfig::homebrew': }
+        class {'adrianconfig::gems': } ->
+        class {'adrianconfig::directories': } ->
+        class {'adrianconfig::repositories': } ->
+        class {'adrianconfig::config': } ->
+        class {'adrianconfig::dock': } ->
+        class {'adrianconfig::wallpaper': } ->
+        class {'adrianconfig::fonts': } ->
+        class {'adrianconfig::ssh_keys': } ->
+        class {'adrianconfig::git': } ->
+        class {'adrianconfig::osquery': } ->
+        class {'adrianconfig::crashplan': } ->
+        class {'adrianconfig::munki': } ->
+        class {'adrianconfig::munki_ssl': }
 }

@@ -1,4 +1,4 @@
-class grahamconfig::mas {
+class adrianconfig::mas {
 
     include mas
 

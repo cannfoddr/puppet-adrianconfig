@@ -1,11 +1,11 @@
-class grahamconfig::config::system (
+class adrianconfig::config::system (
     ){
 
-    $my_homedir   = $grahamconfig::my_homedir
-    $my_sourcedir = $grahamconfig::my_sourcedir
-    $my_username  = $grahamconfig::my_username
+    $my_homedir   = $adrianconfig::my_homedir
+    $my_sourcedir = $adrianconfig::my_sourcedir
+    $my_username  = $adrianconfig::my_username
     
-    if $my_username == 'grahamgilbert' {
+    if $my_username == 'adrian' {
     # Follow HTTP redirects with munki
     mac_admin::osx_defaults { 'Follow HTTP redirects with munki':
         ensure => present,

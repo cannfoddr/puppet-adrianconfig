@@ -1,9 +1,9 @@
-class grahamconfig::config::iterm (
+class adrianconfig::config::iterm (
     ){
 
-    $my_homedir   = $grahamconfig::my_homedir
-    $my_sourcedir = $grahamconfig::my_sourcedir
-    $my_username  = $grahamconfig::my_username
+    $my_homedir   = $adrianconfig::my_homedir
+    $my_sourcedir = $adrianconfig::my_sourcedir
+    $my_username  = $adrianconfig::my_username
 
     # Set up iTerm Preferences
     mac_admin::osx_defaults { 'Load iTerm prefences from a custom folder':

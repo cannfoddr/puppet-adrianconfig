@@ -1,9 +1,9 @@
-class grahamconfig::repositories::mine (
+class adrianconfig::repositories::mine (
 ){
-    $my_homedir   = $grahamconfig::my_homedir
-    $my_sourcedir = $grahamconfig::my_sourcedir
-    $my_username  = $grahamconfig::my_username
+    $my_homedir   = $adrianconfig::my_homedir
+    $my_sourcedir = $adrianconfig::my_sourcedir
+    $my_username  = $adrianconfig::my_username
 
-    class {'grahamconfig::repositories::mine::luggage_local': }
-    class {'grahamconfig::repositories::mine::puppet_run': }
+    class {'adrianconfig::repositories::mine::luggage_local': }
+    class {'adrianconfig::repositories::mine::puppet_run': }
 }

@@ -1,9 +1,9 @@
-class grahamconfig::config::the_luggage (
+class adrianconfig::config::the_luggage (
     ){
 
-    $my_homedir   = $grahamconfig::my_homedir
-    $my_sourcedir = $grahamconfig::my_sourcedir
-    $my_username  = $grahamconfig::my_username
+    $my_homedir   = $adrianconfig::my_homedir
+    $my_sourcedir = $adrianconfig::my_sourcedir
+    $my_username  = $adrianconfig::my_username
 
     # repository { 'the_luggage':
     #     path    =>  "${my_sourcedir}/Others/luggage",

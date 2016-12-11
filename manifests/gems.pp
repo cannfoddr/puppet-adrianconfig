@@ -1,4 +1,4 @@
-class grahamconfig::gems {
+class adrianconfig::gems {
     
     package { 'bundler':
         ensure   => 'latest',

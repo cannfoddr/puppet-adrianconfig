@@ -1,8 +1,8 @@
-class grahamconfig::git (
+class adrianconfig::git (
 ){
-    $my_homedir   = $grahamconfig::my_homedir
-    $my_sourcedir = $grahamconfig::my_sourcedir
-    $my_username  = $grahamconfig::my_username
+    $my_homedir   = $adrianconfig::my_homedir
+    $my_sourcedir = $adrianconfig::my_sourcedir
+    $my_username  = $adrianconfig::my_username
 
     $boxen_user = $my_username
 
@@ -11,7 +11,7 @@ class grahamconfig::git (
     }
 
     git::config::global{ 'user.name':
-        value => 'Graham Gilbert',
+        value => 'Adrian Merwood',
     }
 
     git::config::global{ 'user.email':
@@ -26,7 +26,7 @@ class grahamconfig::git (
 
     file {'/usr/local/bin/git-fat':
         ensure => present,
-        source => 'puppet:///modules/grahamconfig/git-fat',
+        source => 'puppet:///modules/adrianconfig/git-fat',
         mode   => '0755',
         owner  => 0,
         group  => 0,

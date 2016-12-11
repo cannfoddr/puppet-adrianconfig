@@ -1,8 +1,8 @@
-class grahamconfig::directories (
+class adrianconfig::directories (
 ){
-    $my_homedir   = $grahamconfig::my_homedir
-    $my_sourcedir = $grahamconfig::my_sourcedir
-    $my_username  = $grahamconfig::my_username
+    $my_homedir   = $adrianconfig::my_homedir
+    $my_sourcedir = $adrianconfig::my_sourcedir
+    $my_username  = $adrianconfig::my_username
 
     file {'/etc/facter':
         ensure => 'directory'

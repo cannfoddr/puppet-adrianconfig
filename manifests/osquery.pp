@@ -1,8 +1,8 @@
-class grahamconfig::osquery (
+class adrianconfig::osquery (
 ){
-    $my_homedir   = $grahamconfig::my_homedir
-    $my_sourcedir = $grahamconfig::my_sourcedir
-    $my_username  = $grahamconfig::my_username
+    $my_homedir   = $adrianconfig::my_homedir
+    $my_sourcedir = $adrianconfig::my_sourcedir
+    $my_username  = $adrianconfig::my_username
 
     # file {'/var/osquery':
     #     ensure => directory,
@@ -14,19 +14,19 @@ class grahamconfig::osquery (
 
     # file {'/var/osquery/osquery.conf':
     #     ensure => present,
-    #     source => 'puppet:///modules/grahamconfig/osquery/osquery.conf',
+    #     source => 'puppet:///modules/adrianconfig/osquery/osquery.conf',
     #     mode   => 0644,
     # }
 
     # file {'/Library/LaunchDaemons/com.facebook.osqueryd.plist':
     #     ensure => present,
-    #     source => 'puppet:///modules/grahamconfig/osquery/com.facebook.osqueryd.plist',
+    #     source => 'puppet:///modules/adrianconfig/osquery/com.facebook.osqueryd.plist',
     #     mode   => 0644,
     # }
 
     # file {'/etc/newsyslog.d/com.facebook.osqueryd.conf':
     #     ensure => present,
-    #     source => 'puppet:///modules/grahamconfig/osquery/com.facebook.osqueryd.conf',
+    #     source => 'puppet:///modules/adrianconfig/osquery/com.facebook.osqueryd.conf',
     #     mode   => 0644,
     # }
     

@@ -1,9 +1,9 @@
-class grahamconfig::config (
+class adrianconfig::config (
     ){
 
-    $my_homedir   = $grahamconfig::my_homedir
-    $my_sourcedir = $grahamconfig::my_sourcedir
-    $my_username  = $grahamconfig::my_username
+    $my_homedir   = $adrianconfig::my_homedir
+    $my_sourcedir = $adrianconfig::my_sourcedir
+    $my_username  = $adrianconfig::my_username
 
     File {
         owner => $my_username,
@@ -32,17 +32,17 @@ class grahamconfig::config (
         user   => $my_username
     }
 
-    class { 'grahamconfig::config::system': } ->
-    class { 'grahamconfig::config::autopkg': } ->
-    class { 'grahamconfig::config::atom': } ->
-    class { 'grahamconfig::config::cocoapython': } ->
-    class { 'grahamconfig::config::the_luggage': } ->
-    class { 'grahamconfig::config::sublime_text': } ->
-    class { 'grahamconfig::config::textmate': } ->
-    class { 'grahamconfig::config::zsh': } ->
-    class { 'grahamconfig::config::alfred': } ->
-    class { 'grahamconfig::config::iterm': }
-    class { 'grahamconfig::config::colors': }
+    class { 'adrianconfig::config::system': } ->
+    class { 'adrianconfig::config::autopkg': } ->
+    class { 'adrianconfig::config::atom': } ->
+    class { 'adrianconfig::config::cocoapython': } ->
+    class { 'adrianconfig::config::the_luggage': } ->
+    class { 'adrianconfig::config::sublime_text': } ->
+    class { 'adrianconfig::config::textmate': } ->
+    class { 'adrianconfig::config::zsh': } ->
+    class { 'adrianconfig::config::alfred': } ->
+    class { 'adrianconfig::config::iterm': }
+    class { 'adrianconfig::config::colors': }
 
     # If on Home Machine, enroll in Systems manager
     # if $::fqdn == 'Artoo.local'{
@@ -81,7 +81,7 @@ class grahamconfig::config (
 
     file {'/etc/meraki/ci.conf':
         ensure  => present,
-        source  => 'puppet:///modules/grahamconfig/meraki/ci.conf',
+        source  => 'puppet:///modules/adrianconfig/meraki/ci.conf',
         owner   => 0,
         group   => 0,
         mode    => '0644',
